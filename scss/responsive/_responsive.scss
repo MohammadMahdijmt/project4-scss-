@@ -4,6 +4,9 @@
    .nav{
      grid-template-columns: 1fr 1fr;
    }
+   .menu{
+    justify-content: start;
+   }
    .logo{
     padding-left: 20px;
    }
