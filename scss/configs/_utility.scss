@@ -1,0 +1,104 @@
+%btn-a{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: $light-color;
+    font-weight: bold;
+    &:hover{
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
+.nav-border{
+    border-bottom: 2px solid $main-color;
+}
+.text-center{
+    text-align: center;
+}
+.py{
+    &-1{
+        padding: 1rem 0;
+    }
+    &-2{
+        padding: 2rem 0;
+    }
+    &-3{
+        padding: 3rem 0;
+    }
+    &-4{
+        padding: 4rem 0;
+    }
+    &-5{
+        padding: 5rem 0;
+    }
+}
+.mb{
+    &-1{
+        margin-bottom: 1rem;
+    }
+    &-2{
+        margin-bottom: 2rem;
+    }
+    &-3{
+        margin-bottom: 3rem;
+    }
+    &-4{
+        margin-bottom: 4rem;
+    }
+    &-5{
+        margin-bottom: 5em;
+    }
+}
+.mt{
+    &-1{
+        margin-top: 1rem;
+    }
+    &-2{
+        margin-top: 2rem;
+    }
+    &-3{
+        margin-top: 3rem;
+    }
+    &-4{
+        margin-top: 4rem;
+    }
+    &-5{
+        margin-top: 5rem;
+    }
+}
+.border-section{
+    position: relative;
+
+
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top:100%;
+        background-color: pink;
+        width: 100px;
+        height: 3px;
+        transform: translate(-50% , 0);
+    }
+}
+@mixin transform($property){
+    -webkit-transform: $property;
+    -moz-transform:$property ;
+    -o-transform:$property ;
+    -ms-transform: $property;
+}
+
+@mixin gridpart($color){
+    width: 100%;
+    background-color:$color;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 40px;
+
+    .fas{
+        font-size: 30px;
+    }
+}

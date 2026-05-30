@@ -1,0 +1,17 @@
+* , *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Amarna", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: $black-color;
+}
+ul , li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
